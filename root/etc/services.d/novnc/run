@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+exec \
+    s6-setuidgid abc "${NO_VNC_HOME}/utils/launch.sh" \
+        --listen 8808 \
+        --vnc localhost:5900

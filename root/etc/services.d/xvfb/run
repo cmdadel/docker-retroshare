@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+exec Xvfb :0 \
+    -screen 0 \
+    1280x768x24

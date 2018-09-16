@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+exec \
+    s6-setuidgid abc x11vnc \
+        -forever \
+        -shared
